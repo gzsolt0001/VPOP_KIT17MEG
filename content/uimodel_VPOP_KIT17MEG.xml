@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<WebUIModel csempeMod="MENU" id="VPOP_KIT17MEG" info="Az Európai Unió és az ENSZ Biztonsági Tanácsa által elrendelt pénzügyi és vagyoni korlátozó intézkedések végrehajtásáról szóló 2017. évi LII. törvényben meghatározott kötelezettség végrehajtása érdekében" mainDocumentId="VPOP_KIT17MEG" major="1" minor="8" mukodesiMod="NORMAL" name="VPOP_KIT17MEG" templateType="single" tipus="ADATSZOLGALTATAS" webDefaultLength="4" webInfo="Az Európai Unió és az ENSZ Biztonsági Tanácsa által elrendelt pénzügyi és vagyoni korlátozó intézkedések végrehajtásáról szóló 2017. évi LII. törvényben meghatározott kötelezettség végrehajtása érdekében" webName="VPOP_KIT17MEG" webOnell="false">
+    <Form id="VPOP_KIT17MEG" name="VPOP_KIT17MEG" webDefaultLength="4" webInfo="Az Európai Unió és az ENSZ Biztonsági Tanácsa által elrendelt pénzügyi és vagyoni korlátozó intézkedések végrehajtásáról szóló 2017. évi LII. törvényben meghatározott kötelezettség végrehajtása érdekében" webName="VPOP_KIT17MEG">
+        <Assistants>
+            <AssistantItem id="ROOT_ASSISTANTITEM" leaf="false" name="Mezők hozzáadása" pos="0"/>
+            <TileAssistants/>
+        </Assistants>
+        <Attachements>
+            <ATCSIZES size="0MB" sum_size="150MB" rsize="2147483647" rsum_size="157286400"/>
+            <ATTACHEMENT id="1" description="Csatolmány" required="0" min_count="0" max_count="0" file_extensions="*"/>
+        </Attachements>
+        <AutAttachements>
+            <ATTACHEMENT type="1" description="Automatikus csatolmány (1)" id="1"/>
+        </AutAttachements>
+        <FieldGroup defaultGroup="false" index="0" maxCount="0" toggleSwitch="false" type="SIMPLE" visualType="open" fgroupType="NORMAL" id="120002" name="Mezőcsoport" wId="FG1">
+            <Fid>0A0001C001A</Fid>
+            <Fid>0A0001C002A</Fid>
+            <Fid>0A0001C003A</Fid>
+            <Fid>0A0001C004A</Fid>
+            <Fid>0A0001C005A</Fid>
+            <Layout type="GROUP" wId="FG1_G1">
+                <Layout type="INLINE" wId="FG1_G1_I1">
+                    <Layout fixGrid="false" type="INLINE_GROUP_HORIZONTAL" wId="FG1_G1_I1_IGH1">
+                        <Field id="0A0001C001A" label="Pénzmosás és Terrorizmusfinanszírozás Elleni Iroda iktatószáma:" labelGrid="12" labelPosition="LEFT" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="pmt_iktsz1" webLength="2" wId="FG1_G1_I1_IGH1_F1" calculated="true" default="false" irids="8" mask="#####" maxLength="5" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="1" type="INLINE_GROUP" wId="FG1_G1_I1_IG2">
+                        <Field id="0A0001C002A" label="" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="COMBOBOX" vid="pmt_iktsz2" webLength="1" wId="FG1_G1_I1_IG2_F1" calculated="false" default="false" dynList="false" irids="8" mask="#" maxLength="1" metaType="1" validation="true" valuesListIndex="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG1_G1_I1_IG3">
+                        <Field id="0A0001C003A" label="" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="pmt_iktsz3" webLength="2" wId="FG1_G1_I1_IG3_F1" calculated="false" default="false" irids="8" mask="####" maxLength="4" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="1" type="INLINE_GROUP" wId="FG1_G1_I1_IG4">
+                        <Field id="0A0001C004A" label="" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="pmt_iktsz4" webLength="1" wId="FG1_G1_I1_IG4_F1" calculated="false" default="false" irids="8" mask="###" maxLength="3" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG1_G1_I1_IG5">
+                        <Field id="0A0001C005A" label="" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="pmt_iktsz5" webLength="2" wId="FG1_G1_I1_IG5_F1" calculated="false" default="false" irids="8" mask="#####" maxLength="5" metaType="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="false" index="1" maxCount="0" toggleSwitch="false" type="SIMPLE" visualType="open" fgroupType="NORMAL" id="120009" name="Mezőcsoport" wId="FG2">
+            <Fid>0A0001D001A</Fid>
+            <Fid>0A0001D00500A</Fid>
+            <Layout type="HORIZONTAL" wId="FG2_H1">
+                <Field id="0A0001D001A" label="Név:" labelGrid="1" labelPosition="LEFT" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="szolg_nev" webLength="8" wId="FG2_H1_F1" calculated="false" default="false" irids="8" maxLength="60" metaType="1"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG2_H2">
+                <Field id="0A0001D00500A" label="Adószám:" labelGrid="1" labelPosition="LEFT" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="adószám" webLength="2" wId="FG2_H2_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="false" index="2" maxCount="0" toggleSwitch="false" type="SIMPLE" visualType="open" fgroupType="NORMAL" id="120011" name="Mezőcsoport" wId="FG3">
+            <Fid>0A0001E001A</Fid>
+            <Fid>0A0001E002A</Fid>
+            <Fid>0A0001E003A</Fid>
+            <Layout type="GROUP" wId="FG3_G1">
+                <Layout type="INLINE" wId="FG3_G1_I1">
+                    <Layout fixGrid="false" type="INLINE_GROUP_HORIZONTAL" wId="FG3_G1_I1_IGH1">
+                        <Field id="0A0001E001A" label="Szolgáltatónál/vagyoni nyilvántartást vezető szervnél alkalmazott azonosító:" labelGrid="7" labelPosition="LEFT" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="szolg_azon" webLength="4" wId="FG3_G1_I1_IGH1_F1" calculated="false" default="false" irids="8" maxLength="30" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" type="INLINE_GROUP_HORIZONTAL">
+                        <Field id="0A0001E002A" label="Szolgáltató vagy a vagyoni nyilvántartást vezető szerv részéről felmerült körülmény részletes leírása:" labelGrid="12" labelPosition="LEFT" mandatory="false" readonly="false" rows="7" searcher="false" type="TEXTAREA" vid="szolg_teny" webLength="12" calculated="false" default="false" irids="8" maxLength="999" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" type="INLINE_GROUP_HORIZONTAL" wId="FG3_G1_I1_IGH3">
+                        <Field id="0A0001E003A" label="Mellékletek száma" labelGrid="2" labelPosition="LEFT" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="csatolmanyok" webLength="1" wId="FG3_G1_I1_IGH3_F1" calculated="false" default="false" irids="3" mask="##" maxLength="2" metaType="2"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <InputRule irid="1" irule="[A-Z]"/>
+        <InputRule irid="2" irule="[0-9,.]"/>
+        <InputRule irid="3" irule="[0-9]"/>
+        <InputRule irid="4" irule="[0-9+\-,.]"/>
+        <InputRule irid="5" irule="[A-Z0-9]"/>
+        <InputRule irid="6" irule="[A-ZÁÉÍÓÖŐÚÜŰ]"/>
+        <InputRule irid="7" irule="[^0-9]"/>
+        <InputRule irid="8" irule="[\x20-\uFFFF]"/>
+        <InputRule irid="9" irule="[ X]"/>
+        <InputRule irid="10" irule="[0-9+-]"/>
+        <Menu>
+            <MenuItem id="ROOT_MENUITEM" leaf="false" name="Mezők hozzáadása" pos="0" wizard="false">
+                <MenuItem id="120001" leaf="true" name="1/A) Alapadatok" parentId="ROOT_MENUITEM" pos="1" type="CSEMPE" wizard="false">
+                    <FieldGroupId>120002</FieldGroupId>
+                </MenuItem>
+                <MenuItem id="120008" leaf="true" name="1/B) Szolgáltató/vagyoni nyilvántartást vezető szerv adatai" parentId="ROOT_MENUITEM" pos="2" type="CSEMPE" wizard="false">
+                    <FieldGroupId>120009</FieldGroupId>
+                </MenuItem>
+                <MenuItem id="120010" leaf="true" name="1/C) Adatszolgáltatás" parentId="ROOT_MENUITEM" pos="3" type="CSEMPE" wizard="false">
+                    <FieldGroupId>120011</FieldGroupId>
+                </MenuItem>
+            </MenuItem>
+            <TileMenus>
+                <TileMenuItem id="120001"/>
+                <TileMenuItem id="120008"/>
+                <TileMenuItem id="120010"/>
+            </TileMenus>
+        </Menu>
+        <Message id="1" msgLevel="error">
+            <CalcId>100001</CalcId>
+            <CalcId>100002</CalcId>
+            <CalcId>100003</CalcId>
+            <Msg>[Nyomtatvány] Verziokontroll=1</Msg>
+        </Message>
+        <Message id="2" msgLevel="error">
+            <CalcId>1</CalcId>
+            <Msg>tiltéstöröl (pmt_iktsz2="i", pmt_iktsz4 ) (Hibakód=&lt;1/&gt;)</Msg>
+        </Message>
+        <Message id="3" msgLevel="error">
+            <CalcId>6</CalcId>
+            <Msg>Teljes hosszon kitöltendő! (Hibakód=&lt;6&gt;)</Msg>
+        </Message>
+        <Message id="4" msgLevel="error">
+            <CalcId>7</CalcId>
+            <Msg>Teljes hosszon kitöltendő! (Hibakód=&lt;7&gt;)</Msg>
+        </Message>
+        <Message id="5" msgLevel="error">
+            <CalcId>9</CalcId>
+            <Msg>Kitöltendő! (Hibakód=&lt;9&gt;)</Msg>
+        </Message>
+        <Message id="6" msgLevel="error">
+            <CalcId>8</CalcId>
+            <Msg>Teljes hosszon kitöltendő! (Hibakód=&lt;8&gt;)</Msg>
+        </Message>
+        <Message id="7" msgLevel="error">
+            <CalcId>12</CalcId>
+            <Msg>A mező kötelezően kitöltendő! (Hibakód=&lt;12&gt;)</Msg>
+        </Message>
+        <Message id="8" msgLevel="fatalerror">
+            <CalcId>10</CalcId>
+            <Msg>Adószámot kötelező kitölteni! (Hibakód=&lt;10&gt;)</Msg>
+        </Message>
+        <Message id="9" msgLevel="fatalerror">
+            <CalcId>11</CalcId>
+            <Msg>Adószám formátuma CDV hibás! (Hibakód=&lt;11&gt;)</Msg>
+        </Message>
+        <Message id="10" msgLevel="error">
+            <CalcId>100005</CalcId>
+            <CalcId>100004</CalcId>
+            <CalcId>100006</CalcId>
+            <CalcId>100007</CalcId>
+            <CalcId>100009</CalcId>
+            <CalcId>100010</CalcId>
+            <CalcId>100008</CalcId>
+            <Msg>A mező kötelezően kitöltendő! (Hibakód=&lt;m001&gt;)</Msg>
+        </Message>
+        <SearchFieldGroupId>120002</SearchFieldGroupId>
+        <SearchFieldGroupId>120009</SearchFieldGroupId>
+        <SearchFieldGroupId>120011</SearchFieldGroupId>
+        <ValuesList id="7200" index="1">
+            <List>á</List>
+            <Value>á</Value>
+        </ValuesList>
+    </Form>
+</WebUIModel>
