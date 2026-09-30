@@ -2,10 +2,10 @@
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
         xmlns:common="https://soap.api.nav.gov.hu/definitions/model/2.0/common/1.0"
         xmlns:meta="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
-        xmlns:tns="https://soap.api.nav.gov.hu/definitions/model/2.0/VPOP_KIT17MEG/1.8"
+        xmlns:tns="https://soap.api.nav.gov.hu/definitions/model/2.0/VPOP_KIT17MEG/1.9"
         xmlns:xs="http://www.w3.org/2001/XMLSchema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        targetNamespace="https://soap.api.nav.gov.hu/definitions/model/2.0/VPOP_KIT17MEG/1.8">
+        targetNamespace="https://soap.api.nav.gov.hu/definitions/model/2.0/VPOP_KIT17MEG/1.9">
    <import namespace="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
            schemaLocation="form_xsd_metaschema.xsd"/>
    <import namespace="https://soap.api.nav.gov.hu/definitions/model/2.0/common/1.0"
@@ -21,6 +21,14 @@
          <xs:field xpath="fileId"/>
       </xs:unique>
    </element>
+   <simpleType name="Enum_VPOP_KIT17MEG_0A0001C002A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="á"/>
+      </restriction>
+   </simpleType>
    <complexType name="Doc_VPOP_KIT17MEG_Type">
       <annotation>
          <documentation>A teljes bizonylat szerkezetet leíró típus</documentation>
@@ -37,14 +45,6 @@
          </element>
       </sequence>
    </complexType>
-   <simpleType name="Enum_VPOP_KIT17MEG_0A0001C002A">
-      <annotation>
-         <documentation>Enum értékek </documentation>
-      </annotation>
-      <restriction base="xs:string">
-         <enumeration value="á"/>
-      </restriction>
-   </simpleType>
    <complexType name="Form_VPOP_KIT17MEG_Type">
       <annotation>
          <documentation>A teljes nyomtatvány VPOP_KIT17MEG részbiztonylatának szerkezetét leíró típus.</documentation>
