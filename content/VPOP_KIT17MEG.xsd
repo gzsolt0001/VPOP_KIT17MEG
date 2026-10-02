@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
-        xmlns:common="https://soap.api.nav.gov.hu/definitions/model/2.0/common/1.0"
+        xmlns:baseForm="https://soap.api.nav.gov.hu/definitions/model/2.0/baseForm/1.0"
         xmlns:meta="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
-        xmlns:tns="https://soap.api.nav.gov.hu/definitions/model/2.0/VPOP_KIT17MEG/1.9"
+        xmlns:tns="https://soap.api.nav.gov.hu/definitions/model/2.0/VPOP_KIT17MEG/1.9.0"
         xmlns:xs="http://www.w3.org/2001/XMLSchema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        targetNamespace="https://soap.api.nav.gov.hu/definitions/model/2.0/VPOP_KIT17MEG/1.9">
+        targetNamespace="https://soap.api.nav.gov.hu/definitions/model/2.0/VPOP_KIT17MEG/1.9.0">
    <import namespace="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
            schemaLocation="form_xsd_metaschema.xsd"/>
-   <import namespace="https://soap.api.nav.gov.hu/definitions/model/2.0/common/1.0"
-           schemaLocation="common.xsd"/>
+   <import namespace="https://soap.api.nav.gov.hu/definitions/model/2.0/baseForm/1.0"
+           schemaLocation="baseForm.xsd"/>
    <element name="Doc_VPOP_KIT17MEG"
             type="tns:Doc_VPOP_KIT17MEG_Type"
             meta:metaType="DocMetaType">
@@ -21,14 +21,6 @@
          <xs:field xpath="fileId"/>
       </xs:unique>
    </element>
-   <simpleType name="Enum_VPOP_KIT17MEG_0A0001C002A">
-      <annotation>
-         <documentation>Enum értékek </documentation>
-      </annotation>
-      <restriction base="xs:string">
-         <enumeration value="á"/>
-      </restriction>
-   </simpleType>
    <complexType name="Doc_VPOP_KIT17MEG_Type">
       <annotation>
          <documentation>A teljes bizonylat szerkezetet leíró típus</documentation>
@@ -45,6 +37,18 @@
          </element>
       </sequence>
    </complexType>
+   <simpleType name="Enum_VPOP_KIT17MEG_0A0001C002A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="á">
+            <annotation>
+               <documentation>á</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
    <complexType name="Form_VPOP_KIT17MEG_Type">
       <annotation>
          <documentation>A teljes nyomtatvány VPOP_KIT17MEG részbiztonylatának szerkezetét leíró típus.</documentation>
@@ -75,7 +79,7 @@
             </annotation>
          </element>
          <element name="Attachment_1"
-                  type="common:AttachmentType"
+                  type="baseForm:AttachmentType"
                   minOccurs="0"
                   maxOccurs="unbounded"
                   meta:metaType="AttachmentMetaType">
@@ -139,13 +143,13 @@
                   minOccurs="0"
                   meta:metaType="FieldMetaType">
             <annotation>
-               <documentation>Pénzmosás és Terrorizmusfinanszírozás Elleni Iroda iktatószáma: (pmt_iktsz1)</documentation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ Pénzmosás és Terrorizmusfinanszírozás Elleni Iroda iktatószáma: (pmt_iktsz1)</documentation>
             </annotation>
             <simpleType>
                <restriction base="string">
                   <minLength value="1"/>
                   <maxLength value="5"/>
-                  <pattern value="\P{C}+"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
                </restriction>
             </simpleType>
          </element>
@@ -167,7 +171,7 @@
                <restriction base="string">
                   <minLength value="1"/>
                   <maxLength value="4"/>
-                  <pattern value="\P{C}+"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
                </restriction>
             </simpleType>
          </element>
@@ -181,7 +185,7 @@
                <restriction base="string">
                   <minLength value="1"/>
                   <maxLength value="3"/>
-                  <pattern value="\P{C}+"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
                </restriction>
             </simpleType>
          </element>
@@ -195,7 +199,7 @@
                <restriction base="string">
                   <minLength value="1"/>
                   <maxLength value="5"/>
-                  <pattern value="\P{C}+"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
                </restriction>
             </simpleType>
          </element>
@@ -216,7 +220,7 @@
                <restriction base="string">
                   <minLength value="1"/>
                   <maxLength value="60"/>
-                  <pattern value="\P{C}+"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
                </restriction>
             </simpleType>
          </element>
@@ -251,7 +255,7 @@
                <restriction base="string">
                   <minLength value="1"/>
                   <maxLength value="30"/>
-                  <pattern value="\P{C}+"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
                </restriction>
             </simpleType>
          </element>
@@ -265,7 +269,7 @@
                <restriction base="string">
                   <minLength value="1"/>
                   <maxLength value="999"/>
-                  <pattern value="[\t\n\r\P{C}]+"/>
+                  <pattern value="[\t\n\r\P{C}]*[^\s][\t\n\r\P{C}]*"/>
                </restriction>
             </simpleType>
          </element>
